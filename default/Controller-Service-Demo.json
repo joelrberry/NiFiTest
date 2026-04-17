@@ -1,4 +1,5 @@
 {
+  "externalControllerServices" : { },
   "flow" : {
     "createdTimestamp" : 1776455914247,
     "description" : "",
@@ -7,5 +8,133 @@
     "name" : "Controller Service Demo",
     "versionCount" : 0
   },
-  "latest" : false
+  "flowContents" : {
+    "comments" : "",
+    "componentType" : "PROCESS_GROUP",
+    "connections" : [ ],
+    "controllerServices" : [ ],
+    "defaultBackPressureDataSizeThreshold" : "1 GB",
+    "defaultBackPressureObjectThreshold" : 10000,
+    "defaultFlowFileExpiration" : "0 sec",
+    "executionEngine" : "INHERITED",
+    "externalControllerServiceReferences" : { },
+    "flowFileConcurrency" : "UNBOUNDED",
+    "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+    "funnels" : [ ],
+    "identifier" : "flow-contents-group",
+    "inputPorts" : [ ],
+    "labels" : [ ],
+    "maxConcurrentTasks" : 1,
+    "name" : "Controller Service Demo",
+    "outputPorts" : [ ],
+    "position" : {
+      "x" : 0.0,
+      "y" : 0.0
+    },
+    "processGroups" : [ ],
+    "processors" : [ {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.9.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "9c23438e-34a1-3f67-967e-4b950767e6d8",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "GenerateFlowFile",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : -115.00005016201862,
+        "y" : -635.5000356214784
+      },
+      "properties" : {
+        "File Size" : "0B",
+        "Batch Size" : "1",
+        "Unique FlowFiles" : "false",
+        "Mime Type" : "application/json",
+        "Custom Text" : "{\n    \"id\": 1211,\n    \"name\": \"Fxskills\",\n    \"salary\": 9898,\n    \"deptid\": 10\n}",
+        "Character Set" : "UTF-8",
+        "Data Format" : "Text"
+      },
+      "propertyDescriptors" : {
+        "File Size" : {
+          "displayName" : "File Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "File Size",
+          "sensitive" : false
+        },
+        "Batch Size" : {
+          "displayName" : "Batch Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Batch Size",
+          "sensitive" : false
+        },
+        "Unique FlowFiles" : {
+          "displayName" : "Unique FlowFiles",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Unique FlowFiles",
+          "sensitive" : false
+        },
+        "Mime Type" : {
+          "displayName" : "Mime Type",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Mime Type",
+          "sensitive" : false
+        },
+        "Custom Text" : {
+          "displayName" : "Custom Text",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Custom Text",
+          "sensitive" : false
+        },
+        "Character Set" : {
+          "displayName" : "Character Set",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Character Set",
+          "sensitive" : false
+        },
+        "Data Format" : {
+          "displayName" : "Data Format",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Data Format",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "30 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.GenerateFlowFile",
+      "yieldDuration" : "1 sec"
+    } ],
+    "remoteProcessGroups" : [ ],
+    "scheduledState" : "ENABLED",
+    "statelessFlowTimeout" : "1 min"
+  },
+  "flowEncodingVersion" : "1.0",
+  "latest" : false,
+  "parameterContexts" : { },
+  "parameterProviders" : { },
+  "snapshotMetadata" : {
+    "author" : "admin",
+    "flowIdentifier" : "Controller-Service-Demo",
+    "timestamp" : 1776455914824
+  }
 }
